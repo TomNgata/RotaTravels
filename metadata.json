@@ -1,0 +1,6 @@
+{
+  "name": "Rotaract Travel Hacks 2026",
+  "description": "World-Class Conference Platform & Evergreen Travel Intelligence Hub for African Rotaractors and Global Travellers",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
