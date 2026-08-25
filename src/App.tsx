@@ -80,19 +80,8 @@ export default function App() {
     }
   }, []);
 
-  const handlePhaseChange = async (phase: EventPhase) => {
-    const updatedConfig = { ...eventConfig, phase };
-    setEventConfig(updatedConfig);
-
-    try {
-      await fetch('/api/event-config', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ phase })
-      });
-    } catch (e) {
-      // Ignored
-    }
+  const handlePhaseChange = (phase: EventPhase) => {
+    setEventConfig({ ...eventConfig, phase });
   };
 
   const handleOpenQuestionModal = (speakerName?: string) => {

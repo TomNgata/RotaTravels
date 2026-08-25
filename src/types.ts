@@ -62,7 +62,7 @@ export interface ProgrammeSegment {
   title: string;
   pillarId?: number;
   speakerIds: string[];
-  format: 'Keynote' | 'Panel Discussion' | 'Interactive Q&A' | 'Welcome & Protocol' | 'Action Wrap-Up';
+  format: 'Keynote' | 'Panel Discussion' | 'Interactive Q&A' | 'Welcome & Protocol' | 'Action Wrap-Up' | 'Networking & Fellowship';
   description: string;
   keyTakeaways: string[];
 }

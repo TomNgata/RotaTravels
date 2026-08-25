@@ -4,5 +4,10 @@ dist/
 coverage/
 .DS_Store
 *.log
-.env*
+.env
+.env.*
 !.env.example
+.vercel/
+*.zip
+metadata.json
+assets/

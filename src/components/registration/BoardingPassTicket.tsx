@@ -25,8 +25,8 @@ export const BoardingPassTicket: React.FC<BoardingPassTicketProps> = ({
   const handleAddToCalendar = () => {
     const title = encodeURIComponent("Rotaract Travel Hacks 2026 (Fellowship & Global Digital Campaign)");
     const details = encodeURIComponent(`Ticket No: ${registration.ticketNumber}\nAttendance Mode: ${registration.attendanceMode.toUpperCase()}\nHost: ${currentHost}\nLocation: Nairobi, Kenya & Virtual Live Stream`);
-    const location = encodeURIComponent(registration.attendanceMode === 'in-person' ? 'Host Venue, Nairobi, Kenya' : 'Virtual Zoom / YouTube Live');
-    const dates = "20260903T150000Z/20260903T163000Z";
+    const location = encodeURIComponent(registration.attendanceMode === 'in-person' ? 'Clarion Hotel, CBD, Nairobi, Kenya' : 'Virtual Live Stream');
+    const dates = "20260903T153000Z/20260903T173000Z";
 
     const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${location}&dates=${dates}`;
     window.open(googleCalUrl, '_blank');
@@ -78,7 +78,7 @@ export const BoardingPassTicket: React.FC<BoardingPassTicketProps> = ({
               <Plane className="w-4 h-4 text-[#D41B2C] absolute left-1/2 -top-2 -translate-x-1/2 rotate-90" />
             </div>
             <span className="text-[10px] font-extrabold text-amber-900 bg-amber-100 px-2 py-0.5 rounded-full uppercase">
-              3 SEPT 2026 • 6:00 PM EAT
+              3 SEPT 2026 • 6:30 PM EAT
             </span>
           </div>
 

@@ -174,11 +174,11 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
                 <div>
                   <span className="text-slate-400 font-semibold block uppercase text-[10px]">TIME</span>
-                  <strong className="text-slate-900 font-bold">6:00 PM – 7:30 PM EAT</strong>
+                  <strong className="text-slate-900 font-bold">6:30 PM – 8:30 PM EAT</strong>
                 </div>
                 <div>
                   <span className="text-slate-400 font-semibold block uppercase text-[10px]">ACCESS</span>
-                  <strong className="text-[#D41B2C] font-bold">100% Free Pass</strong>
+                  <strong className="text-[#D41B2C] font-bold">Free Reg • Kshs 100 Entry</strong>
                 </div>
               </div>
 

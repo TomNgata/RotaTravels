@@ -28,13 +28,13 @@ export const ProgrammeTimeline: React.FC<ProgrammeTimelineProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="space-y-3">
             <span className="px-3.5 py-1.5 rounded-full bg-blue-100 text-[#00246C] font-extrabold text-xs uppercase tracking-wider border border-blue-200 inline-block">
-              90-MINUTE HYBRID SCHEDULE
+              OFFICIAL RUN OF SHOW • HYBRID FELLOWSHIP
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#00246C] tracking-tight">
               Run of Show & Fellowship Schedule
             </h2>
             <p className="text-slate-600 max-w-2xl text-base">
-              Thursday, 3 September 2026 • 6:00 PM – 7:30 PM EAT (15:00 UTC)
+              Thursday, 3 September 2026 • 6:30 PM – 8:30 PM EAT (15:30 UTC) • Clarion Hotel, CBD, Nairobi
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export const ProgrammeTimeline: React.FC<ProgrammeTimelineProps> = ({
                 : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
             }`}
           >
-            All 6 Segments (90 Mins)
+            All Segments (6:00 PM – 8:30 PM)
           </button>
 
           {pillars.map((pillar) => (

@@ -86,7 +86,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentHost }) =
                 <div>
                   <span className="text-slate-400 font-bold block text-[10px] uppercase">CONFIRMED FELLOWSHIP DATE</span>
                   <span className="font-semibold text-white block">Thursday, 3 September 2026</span>
-                  <span className="text-[10px] text-blue-200">6:00 PM – 7:30 PM EAT</span>
+                  <span className="text-[10px] text-blue-200">6:30 PM – 8:30 PM EAT • Clarion Hotel, CBD</span>
                 </div>
               </div>
             </div>

@@ -68,7 +68,7 @@ export const PartnerShowcase: React.FC<PartnerShowcaseProps> = ({
               </h3>
 
               <p className="text-sm text-slate-600 max-w-2xl leading-relaxed">
-                Following host transition from RAC Westlands to protect the fixed date (3 September 2026) and 5-member panel, hosting rights are currently being finalized among panel-affiliated clubs.
+                Officially confirmed as host in August 2026 following the transition from RAC Westlands — protecting the fixed date (3 September 2026) and the confirmed 5-member panel. Venue locked at Clarion Hotel, CBD, Nairobi.
               </p>
             </div>
 

@@ -129,7 +129,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
               </h3>
 
               <p className="text-xs text-slate-600">
-                Confirmed Date: <strong className="text-slate-900">Thursday, 3 September 2026</strong> • 6:00 PM EAT | Host: <strong className="text-[#00246C]">{currentHost}</strong>
+                Confirmed Date: <strong className="text-slate-900">Thursday, 3 September 2026</strong> • 6:30 PM EAT | Host: <strong className="text-[#00246C]">{currentHost}</strong>
               </p>
             </div>
 

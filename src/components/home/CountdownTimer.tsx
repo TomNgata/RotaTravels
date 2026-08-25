@@ -129,7 +129,7 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
           </span>
         </div>
         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-[#00246C] border border-blue-200">
-          6:00 PM EAT (15:00 UTC)
+          6:30 PM EAT (15:30 UTC)
         </span>
       </div>
 
