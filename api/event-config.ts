@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { INITIAL_EVENT_CONFIG, CONFIRMED_PANELISTS, PROGRAMME_PILLARS, PROGRAMME_TIMELINE, PARTNERS_SHOWCASE, FAQS_LIST } from '../../src/data/eventData';
+import { INITIAL_EVENT_CONFIG, CONFIRMED_PANELISTS, PROGRAMME_PILLARS, PROGRAMME_TIMELINE, PARTNERS_SHOWCASE, FAQS_LIST } from '../src/data/eventData';
 import { countRegistrations, countQuestions, listHacks, usingDatabase } from './_lib/store';
 
 export default async function handler(_req: VercelRequest, res: VercelResponse): Promise<void> {

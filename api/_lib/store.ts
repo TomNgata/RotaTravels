@@ -1,5 +1,5 @@
 import postgres from 'postgres';
-import type { EventRegistration, PreEventQuestion, TravelHackSubmission } from '../../../src/types';
+import type { EventRegistration, PreEventQuestion, TravelHackSubmission } from '../../src/types';
 
 const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL;
 
