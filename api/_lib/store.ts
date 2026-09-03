@@ -26,46 +26,43 @@ async function createSchema(): Promise<void> {
   if (!pool) return;
   const client = await pool.connect();
   try {
-    await client.query(\
-      CREATE TABLE IF NOT EXISTS registrations (
-        id TEXT PRIMARY KEY,
-        ticket_number TEXT NOT NULL,
-        full_name TEXT NOT NULL,
-        email TEXT NOT NULL,
-        phone TEXT DEFAULT '',
-        club TEXT NOT NULL,
-        district TEXT DEFAULT '',
-        role TEXT DEFAULT '',
-        attendance_mode TEXT NOT NULL,
-        country_of_residence TEXT DEFAULT '',
-        question_for_panel TEXT,
-        registered_at TIMESTAMPTZ NOT NULL DEFAULT now()
-      )\);
-    await client.query(\
-      CREATE TABLE IF NOT EXISTS questions (
-        id TEXT PRIMARY KEY,
-        sender_name TEXT NOT NULL,
-        sender_club TEXT NOT NULL,
-        category_pillar_id INT NOT NULL DEFAULT 1,
-        question_text TEXT NOT NULL,
-        is_anonymous BOOLEAN NOT NULL DEFAULT FALSE,
-        status TEXT NOT NULL DEFAULT 'approved',
-        submitted_at TIMESTAMPTZ NOT NULL DEFAULT now()
-      )\);
-    await client.query(\
-      CREATE TABLE IF NOT EXISTS hacks (
-        id TEXT PRIMARY KEY,
-        author_name TEXT NOT NULL,
-        author_club TEXT DEFAULT '',
-        author_role TEXT DEFAULT '',
-        destination_country TEXT DEFAULT '',
-        category TEXT DEFAULT '',
-        hack_title TEXT NOT NULL,
-        hack_details TEXT NOT NULL,
-        status TEXT NOT NULL DEFAULT 'approved',
-        submitted_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-        votes_count INT NOT NULL DEFAULT 1
-      )\);
+    await client.query(`CREATE TABLE IF NOT EXISTS registrations (
+      id TEXT PRIMARY KEY,
+      ticket_number TEXT NOT NULL,
+      full_name TEXT NOT NULL,
+      email TEXT NOT NULL,
+      phone TEXT DEFAULT '',
+      club TEXT NOT NULL,
+      district TEXT DEFAULT '',
+      role TEXT DEFAULT '',
+      attendance_mode TEXT NOT NULL,
+      country_of_residence TEXT DEFAULT '',
+      question_for_panel TEXT,
+      registered_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    )`);
+    await client.query(`CREATE TABLE IF NOT EXISTS questions (
+      id TEXT PRIMARY KEY,
+      sender_name TEXT NOT NULL,
+      sender_club TEXT NOT NULL,
+      category_pillar_id INT NOT NULL DEFAULT 1,
+      question_text TEXT NOT NULL,
+      is_anonymous BOOLEAN NOT NULL DEFAULT FALSE,
+      status TEXT NOT NULL DEFAULT 'approved',
+      submitted_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    )`);
+    await client.query(`CREATE TABLE IF NOT EXISTS hacks (
+      id TEXT PRIMARY KEY,
+      author_name TEXT NOT NULL,
+      author_club TEXT DEFAULT '',
+      author_role TEXT DEFAULT '',
+      destination_country TEXT DEFAULT '',
+      category TEXT DEFAULT '',
+      hack_title TEXT NOT NULL,
+      hack_details TEXT NOT NULL,
+      status TEXT NOT NULL DEFAULT 'approved',
+      submitted_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      votes_count INT NOT NULL DEFAULT 1
+    )`);
   } finally {
     client.release();
   }
@@ -83,7 +80,7 @@ const SEED_HACKS: TravelHackSubmission[] = [
     authorName: 'Rtr Daniel Ochieng',
     authorClub: 'Rotaract Club of Nairobi Muthaiga North',
     authorRole: 'International Service Director',
-    destinationCountry: 'Côte d’Ivoire',
+    destinationCountry: 'CÃ´te dâ€™Ivoire',
     category: 'Visa Application',
     hackTitle: 'Print SNEDAI e-Visa Barcode in High Resolution Color',
     hackDetails: 'When arriving at Abidjan airport (ABJ), biometric scanning kiosks read the QR/Barcode on your printed SNEDAI pre-enrollment receipt. Print it on good quality paper in color to avoid scanner delays!',
@@ -127,20 +124,20 @@ const memory = {
 };
 
 export function newId(prefix: string): string {
-  return \\-\-\\;
+  return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
 export function newTicketNumber(): string {
-  return \RTH26-\\;
+  return `RTH26-${Math.floor(1000 + Math.random() * 9000)}`;
 }
 
 export async function insertRegistration(reg: EventRegistration): Promise<void> {
   if (!pool) { memory.registrations.push(reg); return; }
   await ensureSchema();
   await pool.query(
-    \INSERT INTO registrations
+    `INSERT INTO registrations
       (id, ticket_number, full_name, email, phone, club, district, role, attendance_mode, country_of_residence, question_for_panel, registered_at)
-     VALUES (\, \, \, \, \, \, \, \, \, \, \, \)\,
+     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)`,
     [reg.id, reg.ticketNumber, reg.fullName, reg.email, reg.phone, reg.club, reg.district, reg.role, reg.attendanceMode, reg.countryOfResidence, reg.questionForPanel ?? null, reg.registeredAt]
   );
 }
@@ -148,29 +145,29 @@ export async function insertRegistration(reg: EventRegistration): Promise<void> 
 export async function countRegistrations(): Promise<number> {
   if (!pool) return memory.registrations.length;
   await ensureSchema();
-  const { rows } = await pool.query(\SELECT COUNT(*)::int AS count FROM registrations\);
+  const { rows } = await pool.query(`SELECT COUNT(*)::int AS count FROM registrations`);
   return rows[0]?.count ?? 0;
 }
 
 export async function listRegistrations(): Promise<EventRegistration[]> {
   if (!pool) return [...memory.registrations];
   await ensureSchema();
-  const { rows } = await pool.query(\
-    SELECT id, ticket_number AS "ticketNumber", full_name AS "fullName", email, phone, club,
-           district, role, attendance_mode AS "attendanceMode", country_of_residence AS "countryOfResidence",
-           question_for_panel AS "questionForPanel", registered_at AS "registeredAt"
-    FROM registrations ORDER BY registered_at DESC
-  \);
-  return rows;
+  const { rows } = await pool.query(
+    `SELECT id, ticket_number AS "ticketNumber", full_name AS "fullName", email, phone, club,
+            district, role, attendance_mode AS "attendanceMode", country_of_residence AS "countryOfResidence",
+            question_for_panel AS "questionForPanel", registered_at AS "registeredAt"
+     FROM registrations ORDER BY registered_at DESC`
+  );
+  return rows as EventRegistration[];
 }
 
 export async function insertQuestion(q: PreEventQuestion): Promise<void> {
   if (!pool) { memory.questions.push(q); return; }
   await ensureSchema();
   await pool.query(
-    \INSERT INTO questions
+    `INSERT INTO questions
       (id, sender_name, sender_club, category_pillar_id, question_text, is_anonymous, status, submitted_at)
-     VALUES (\, \, \, \, \, \, \, \)\,
+     VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
     [q.id, q.senderName, q.senderClub, q.categoryPillarId, q.questionText, q.isAnonymous, q.status, q.submittedAt]
   );
 }
@@ -178,7 +175,7 @@ export async function insertQuestion(q: PreEventQuestion): Promise<void> {
 export async function countQuestions(): Promise<number> {
   if (!pool) return memory.questions.length;
   await ensureSchema();
-  const { rows } = await pool.query(\SELECT COUNT(*)::int AS count FROM questions\);
+  const { rows } = await pool.query(`SELECT COUNT(*)::int AS count FROM questions`);
   return rows[0]?.count ?? 0;
 }
 
@@ -186,35 +183,35 @@ export async function listHacks(): Promise<TravelHackSubmission[]> {
   if (!pool) return [...memory.hacks];
   await ensureSchema();
   if (!memory.hacksSeeded) {
-    const { rows } = await pool.query(\SELECT COUNT(*)::int AS count FROM hacks\);
-    if ((rows[0]?.count ?? 0) === 0) {
+    const { rows: countRows } = await pool.query(`SELECT COUNT(*)::int AS count FROM hacks`);
+    if ((countRows[0]?.count ?? 0) === 0) {
       for (const hack of SEED_HACKS) {
         await pool.query(
-          \INSERT INTO hacks (id, author_name, author_club, author_role, destination_country, category, hack_title, hack_details, status, submitted_at, votes_count)
-           VALUES (\, \, \, \, \, \, \, \, \, \, \)
-           ON CONFLICT (id) DO NOTHING\,
+          `INSERT INTO hacks (id, author_name, author_club, author_role, destination_country, category, hack_title, hack_details, status, submitted_at, votes_count)
+           VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+           ON CONFLICT (id) DO NOTHING`,
           [hack.id, hack.authorName, hack.authorClub, hack.authorRole, hack.destinationCountry, hack.category, hack.hackTitle, hack.hackDetails, hack.status, hack.submittedAt, hack.votesCount]
         );
       }
     }
     memory.hacksSeeded = true;
   }
-  const { rows } = await pool.query(\
-    SELECT id, author_name AS "authorName", author_club AS "authorClub", author_role AS "authorRole",
-           destination_country AS "destinationCountry", category, hack_title AS "hackTitle",
-           hack_details AS "hackDetails", status, submitted_at AS "submittedAt", votes_count AS "votesCount"
-    FROM hacks ORDER BY votes_count DESC, submitted_at DESC
-  \);
-  return rows;
+  const { rows } = await pool.query(
+    `SELECT id, author_name AS "authorName", author_club AS "authorClub", author_role AS "authorRole",
+            destination_country AS "destinationCountry", category, hack_title AS "hackTitle",
+            hack_details AS "hackDetails", status, submitted_at AS "submittedAt", votes_count AS "votesCount"
+     FROM hacks ORDER BY votes_count DESC, submitted_at DESC`
+  );
+  return rows as TravelHackSubmission[];
 }
 
 export async function insertHack(hack: TravelHackSubmission): Promise<void> {
   if (!pool) { memory.hacks.unshift(hack); return; }
   await ensureSchema();
   await pool.query(
-    \INSERT INTO hacks
+    `INSERT INTO hacks
       (id, author_name, author_club, author_role, destination_country, category, hack_title, hack_details, status, submitted_at, votes_count)
-     VALUES (\, \, \, \, \, \, \, \, \, \, \)\,
+     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)`,
     [hack.id, hack.authorName, hack.authorClub, hack.authorRole, hack.destinationCountry, hack.category, hack.hackTitle, hack.hackDetails, hack.status, hack.submittedAt, hack.votesCount]
   );
 }
@@ -228,9 +225,9 @@ export async function voteHack(id: string): Promise<number | null> {
   }
   await ensureSchema();
   const { rows } = await pool.query(
-    \UPDATE hacks SET votes_count = votes_count + 1
-     WHERE id = \
-     RETURNING votes_count AS "votesCount"\,
+    `UPDATE hacks SET votes_count = votes_count + 1
+     WHERE id = $1
+     RETURNING votes_count AS "votesCount"`,
     [id]
   );
   return rows[0]?.votesCount ?? null;
