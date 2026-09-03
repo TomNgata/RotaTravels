@@ -4,24 +4,38 @@ export const INITIAL_EVENT_CONFIG: EventConfig = {
   id: 'rotaract-travel-hacks-2026',
   title: 'Rotaract Travel Hacks 2026',
   subtitle: 'Fellowship & Global Digital Campaign',
-  dateIso: '2026-09-03T18:00:00+03:00',
+  dateIso: '2026-09-03T18:30:00+03:00',
   dateFormatted: 'Thursday, 3 September 2026',
-  timeFormatted: '6:00 PM – 7:30 PM EAT (15:00 UTC)',
-  durationMinutes: 90,
+  timeFormatted: '6:30 PM – 8:30 PM EAT',
+  durationMinutes: 120,
   format: 'In-Person Fellowship (Nairobi)',
   expectedAttendance: '100+ In-Person Attendees',
   confirmedDate: '3 September 2026',
   currentHost: 'Rotaract Club of Nairobi Parklands',
   isHostConfirmed: true,
-  venueName: 'Host Venue [Pending Confirmation]',
-  venueAddress: 'Nairobi, Kenya',
-  isVenueConfirmed: false,
+  venueName: 'Clarion Hotel, CBD, Nairobi',
+  venueAddress: 'Clarion Hotel, Central Business District, Nairobi, Kenya',
+  isVenueConfirmed: true,
   phase: 'during-event',
   budgetKes: 61500,
-  hashtags: ['#RotaTravelHacks2026', '#GlobalRotaract', '#PathToRAS2026', '#RotaractD9212']
+  hashtags: ['#RotaractTravelHacks', '#RAS2026', '#RACNairobiParklands']
 };
 
 export const CONFIRMED_PANELISTS: Speaker[] = [
+  {
+    id: 'speaker-ruthie-mwathi',
+    name: 'Rtr Ruthie Mwathi',
+    title: 'Rotaractor',
+    club: 'Rotaract Club of Langata',
+    district: 'District 9212',
+    role: 'Panel Specialist — Travel Documentation & Readiness',
+    bio: 'Rtr Ruthie Mwathi of the Rotaract Club of Langata brings practical expertise in travel readiness, financial documentation, and preparing for international Rotaract engagements. A seasoned traveller selected through the structured voting process for her hands-on experience navigating complex visa requirements.',
+    travelMilestones: ['International Rotaract Event Participant', 'Visa Application Specialist', 'RAS 2026 Preparation Advocate'],
+    expertise: ['Financial Documentation', 'Embassy Processes', 'Travel Readiness Planning'],
+    imageUrl: '/panelists/photo_2026-08-21_20-00-07.jpg',
+    highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
+    featured: true
+  },
   {
     id: 'speaker-alvin-muchai',
     name: 'PP Alvin Muchai',
@@ -32,22 +46,8 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'PP Alvin Muchai is a past president of the Rotaract Club of Nairobi Thika Road with extensive experience navigating international travel documentation and visa processes. Selected through the structured voting process for his demonstrated cross-border travel expertise.',
     travelMilestones: ['Past President — RAC Nairobi Thika Road', 'International Rotaract Conference Attendee', 'Cross-Border Travel Veteran'],
     expertise: ['Visa Application Strategy', 'International Document Preparation', 'Global Mobility Planning'],
-    imageUrl: '/speakers/alvin-muchai.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_19-59-51.jpg',
     highlightDestination: 'East Africa & Beyond',
-    featured: true
-  },
-  {
-    id: 'speaker-ruthie-mwathi',
-    name: 'Rtr Ruthie Mwathi',
-    title: 'Rotaractor',
-    club: 'Rotaract Club of Langata',
-    district: 'District 9212',
-    role: 'Panel Specialist — Travel Documentation & Readiness',
-    bio: 'Rtr Ruthie Mwathi of the Rotaract Club of Langata brings practical expertise in travel readiness, financial documentation, and preparing for international Rotaract engagements. A seasoned traveller selected for her hands-on experience navigating complex visa requirements.',
-    travelMilestones: ['International Rotaract Event Participant', 'Visa Application Specialist', 'RAS 2026 Preparation Advocate'],
-    expertise: ['Financial Documentation', 'Embassy Processes', 'Travel Readiness Planning'],
-    imageUrl: '/speakers/ruthie-mwathi.jpg',
-    highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
     featured: true
   },
   {
@@ -60,7 +60,7 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'Rtr Wanjiku Ngure of the Rotaract Club of Langata is passionate about making international travel accessible to Rotaractors across Africa. She shares practical tips on flight budgeting, accommodation hacks, and cost-effective global mobility strategies.',
     travelMilestones: ['Multi-Country Travel Experience', 'Budget Travel Advocate', 'Rotaract Africa Fellowship Participant'],
     expertise: ['Flight Budgeting & Hacks', 'Accommodation Planning', 'Affordable International Travel'],
-    imageUrl: '/speakers/wanjiku-ngure.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_19-59-57.jpg',
     highlightDestination: 'West & East Africa',
     featured: true
   },
@@ -74,7 +74,7 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'Rtr Bedan of the Rotaract Club of Nairobi Parklands brings firsthand experience with international travel across multiple continents, including navigating ECOWAS visa frameworks and planning for Rotaract Africa Summit logistics. Known for his adventurous global travel track record.',
     travelMilestones: ['Multi-Continent Travel Experience', 'ECOWAS & EAC Visa Navigation Expert', 'RAS 2026 Delegation Coordinator'],
     expertise: ['ECOWAS & EAC Visa Rules', 'International Border Protocols', 'Group Travel Logistics'],
-    imageUrl: '/speakers/bedan.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_20-00-03.jpg',
     highlightDestination: 'Canada, Americas & Francophone Africa',
     featured: true
   },
@@ -88,7 +88,7 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'Rtr Vicky Kinyua of the Rotaract Club of Nairobi Parklands specializes in official travel documentation, club authorization letters, and institutional travel protocols for Rotaract delegations. A meticulous planner helping Rotaractors get their paperwork right the first time.',
     travelMilestones: ['Official Travel Protocol Expert', 'Club Authorization Letter Specialist', 'International Rotaract Delegate'],
     expertise: ['Official Club Authorization Letters', 'Document Preparation Checklists', 'Embassy Interview Preparation'],
-    imageUrl: '/speakers/vicky-kinyua.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_20-00-00.jpg',
     highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
     featured: true
   }
@@ -108,7 +108,7 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
       'Establishing ties to country of residence (employment, assets, family, studies)',
       'Common embassy interview traps and how to respond calmly'
     ],
-    assignedPanelists: ['IPP Tom Ngata', 'Rtr Panelist 3 [RAC Langata]']
+    assignedPanelists: ['Rtr Ruthie Mwathi', 'PP Alvin Muchai']
   },
   {
     id: 2,
@@ -123,14 +123,14 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
       'Travel health insurance policies tailored for short-term fellowship trips',
       'Group accommodation tactics (Airbnb vs hostel vs Rotarian hosting)'
     ],
-    assignedPanelists: ['Rtr Sam Gathaga', 'Rtr Panelist 4 [RAC Nairobi Thika Road]']
+    assignedPanelists: ['Rtr Wanjiku Ngure', 'Rtr Vicky Kinyua']
   },
   {
     id: 3,
     numberStr: '03',
     title: 'Path to RAS 2026 & Global Mobility',
-    shortDescription: 'Direct roadmap for attending the Rotaract Africa Summit (RAS 2026) in Côte d’Ivoire, visa waivers, transit protocols, and international Rotary conventions.',
-    fullDescription: 'Preparing African Rotaractors specifically for upcoming milestone events, starting with RAS 2026 in Abidjan, Côte d’Ivoire. Covers transit visas, health requirements (Yellow Fever, vaccinations), regional migration agreements, and leverage for future international Rotary conventions.',
+    shortDescription: 'Direct roadmap for attending the Rotaract Africa Summit (RAS 2026) in Côte d\'Ivoire, visa waivers, transit protocols, and international Rotary conventions.',
+    fullDescription: 'Preparing African Rotaractors specifically for upcoming milestone events, starting with RAS 2026 in Abidjan, Côte d\'Ivoire. Covers transit visas, health requirements (Yellow Fever, vaccinations), regional migration agreements, and leverage for future international Rotary conventions.',
     iconName: 'Compass',
     keyTopics: [
       'Step-by-step travel checklist for RAS 2026 (Côte d\'Ivoire entry & transit)',
@@ -138,14 +138,14 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
       'Yellow Fever vaccine certificate rules & airport health clearance',
       'Leveraging Rotaract travel credentials for future Schengen / US / UK visa applications'
     ],
-    assignedPanelists: ['Rtr Panelist 5 [RAC Nairobi Parklands]', 'IPP Tom Ngata']
+    assignedPanelists: ['Rtr Bedan', 'PP Alvin Muchai']
   },
   {
     id: 4,
     numberStr: '04',
     title: 'Interactive Q&A & Floor Discussion',
     shortDescription: 'Direct live engagement pairing floor questions from attendees with pre-submitted travel challenges gathered from the Registration Portal.',
-    fullDescription: 'A 25-minute fast-paced segment where panelists answer real, raw travel queries submitted by registered attendees. Topics range from handling previous visa rejections to emergency travel assistance and cross-border driving protocols.',
+    fullDescription: 'A 20-minute fast-paced segment where panelists answer real, raw travel queries submitted by registered attendees. Topics range from handling previous visa rejections to emergency travel assistance and cross-border driving protocols.',
     iconName: 'MessageSquare',
     keyTopics: [
       'Answering top pre-submitted questions from registration portal',
@@ -160,24 +160,50 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
 export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
   {
     id: 'seg-1',
-    timeSlot: '18:00 – 18:10 EAT',
+    timeSlot: '18:00 – 18:30 EAT',
+    durationMins: 30,
+    title: 'Registration, Networking & Arrival',
+    format: 'Networking & Fellowship',
+    speakerIds: [],
+    description: 'Delegate check-in at the Clarion Hotel registration desk, early networking, and seat allocation. A KES 290 room charge applies at entry — pay via M-Pesa Buy Goods Till 555555 (Rotaract Nairobi Parklands).',
+    keyTakeaways: [
+      'Early arrival ensures a prompt 18:30 start',
+      'Registration desk managed by the host club volunteer team'
+    ]
+  },
+  {
+    id: 'seg-2',
+    timeSlot: '18:30 – 18:40 EAT',
     durationMins: 10,
-    title: 'Welcome, Rotary Protocol & Initiative Vision',
-    speakerIds: ['speaker-tom-ngata'],
+    title: 'Welcome & Opening Remarks',
     format: 'Welcome & Protocol',
-    description: 'Call to order, Rotary grace/national anthem, introduction of the confirmed host club leadership, and overview of why Rotaract Travel Hacks 2026 was created.',
+    speakerIds: [],
+    description: 'Official welcome by the Host Club President (Rotaract Club of Nairobi Parklands), Rotary protocol observances, and recognition of co-host clubs, partners, and dignitaries.',
     keyTakeaways: [
       'Understanding the mission behind the initiative',
       'Recognition of partner clubs and districts'
     ]
   },
   {
-    id: 'seg-2',
-    timeSlot: '18:10 – 18:30 EAT',
+    id: 'seg-3',
+    timeSlot: '18:40 – 18:50 EAT',
+    durationMins: 10,
+    title: 'Initiative Vision & Context Setting',
+    format: 'Welcome & Protocol',
+    speakerIds: [],
+    description: 'Initiative Champion IPP Tom Ngata (Rotaract Club of Westlands, 2024/25) shares why Rotaract Travel Hacks 2026 was created and walks through the four-pillar session ahead.',
+    keyTakeaways: [
+      'Why the initiative exists: ending avoidable visa refusals',
+      'What the four pillars will deliver'
+    ]
+  },
+  {
+    id: 'seg-4',
+    timeSlot: '18:50 – 19:10 EAT',
     durationMins: 20,
     title: 'Pillar 01: Demystifying Visa Applications & Bureaucracy',
     pillarId: 1,
-    speakerIds: ['speaker-tom-ngata', 'speaker-panelist-3'],
+    speakerIds: ['speaker-ruthie-mwathi', 'speaker-alvin-muchai', 'speaker-wanjiku-ngure', 'speaker-bedan', 'speaker-vicky-kinyua'],
     format: 'Panel Discussion',
     description: 'Deep dive into visa requirements, bank statement rules, invitation letter verification, and proving ties to home country without over-promising.',
     keyTakeaways: [
@@ -187,12 +213,12 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     ]
   },
   {
-    id: 'seg-3',
-    timeSlot: '18:30 – 18:50 EAT',
-    durationMins: 20,
+    id: 'seg-5',
+    timeSlot: '19:10 – 19:25 EAT',
+    durationMins: 15,
     title: 'Pillar 02: Smart Budgeting, Flight Hacking & Readiness',
     pillarId: 2,
-    speakerIds: ['speaker-sam-gathaga', 'speaker-panelist-4'],
+    speakerIds: ['speaker-ruthie-mwathi', 'speaker-alvin-muchai', 'speaker-wanjiku-ngure', 'speaker-bedan', 'speaker-vicky-kinyua'],
     format: 'Panel Discussion',
     description: 'Actionable techniques for finding cheaper flights in Africa, selecting multi-currency cards, obtaining affordable travel insurance, and group stays.',
     keyTakeaways: [
@@ -202,13 +228,13 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     ]
   },
   {
-    id: 'seg-4',
-    timeSlot: '18:50 – 19:05 EAT',
+    id: 'seg-6',
+    timeSlot: '19:25 – 19:40 EAT',
     durationMins: 15,
-    title: 'Pillar 03: Path to RAS 2026 (Côte d’Ivoire) & Global Mobility',
+    title: 'Pillar 03: Path to RAS 2026 (Côte d\'Ivoire) & Global Mobility',
     pillarId: 3,
-    speakerIds: ['speaker-panelist-5', 'speaker-tom-ngata'],
-    format: 'Keynote',
+    speakerIds: ['speaker-ruthie-mwathi', 'speaker-alvin-muchai', 'speaker-wanjiku-ngure', 'speaker-bedan', 'speaker-vicky-kinyua'],
+    format: 'Panel Discussion',
     description: 'Dedicated roadmap for members traveling to RAS 2026 in Abidjan. Transit protocols, e-Visas, ECOWAS/EAC rules, and converting event experience into long-term travel credibility.',
     keyTakeaways: [
       'Official entry requirements for Côte d\'Ivoire e-Visa',
@@ -217,12 +243,12 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     ]
   },
   {
-    id: 'seg-5',
-    timeSlot: '19:05 – 19:25 EAT',
+    id: 'seg-7',
+    timeSlot: '19:40 – 20:00 EAT',
     durationMins: 20,
     title: 'Pillar 04: Interactive Q&A (Pre-Submitted + Live Floor)',
     pillarId: 4,
-    speakerIds: ['speaker-tom-ngata', 'speaker-sam-gathaga', 'speaker-panelist-3', 'speaker-panelist-4', 'speaker-panelist-5'],
+    speakerIds: ['speaker-ruthie-mwathi', 'speaker-alvin-muchai', 'speaker-wanjiku-ngure', 'speaker-bedan', 'speaker-vicky-kinyua'],
     format: 'Interactive Q&A',
     description: 'Panelists answer live audience questions and top voted questions submitted via the online registration portal.',
     keyTakeaways: [
@@ -232,16 +258,29 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     ]
   },
   {
-    id: 'seg-6',
-    timeSlot: '19:25 – 19:30 EAT',
-    durationMins: 5,
+    id: 'seg-8',
+    timeSlot: '20:00 – 20:10 EAT',
+    durationMins: 10,
     title: 'Closing Remarks & Knowledge Hub Launch',
-    speakerIds: ['speaker-tom-ngata'],
+    speakerIds: [],
     format: 'Action Wrap-Up',
-    description: 'Unveiling of the evergreen RotaTravel Knowledge Hub, survey feedback collection, and group fellowship photo.',
+    description: 'Unveiling of the evergreen RotaTravel Knowledge Hub, survey feedback collection, and closing call to action.',
     keyTakeaways: [
       'Accessing downloadable templates and country guides',
       'Submitting personal travel hacks to the community board'
+    ]
+  },
+  {
+    id: 'seg-9',
+    timeSlot: '20:10 – 20:30 EAT',
+    durationMins: 20,
+    title: 'Networking, Photography & Fellowship',
+    speakerIds: [],
+    format: 'Networking & Fellowship',
+    description: 'Informal networking with panelists and fellow delegates, group photography, and social media activation to close the evening.',
+    keyTakeaways: [
+      'Build cross-club and cross-district connections',
+      'Group fellowship photo and social media moments'
     ]
   }
 ];
@@ -249,42 +288,90 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
 export const PARTNERS_SHOWCASE: Partner[] = [
   {
     id: 'p-host',
-    name: '[HOST CLUB — TO BE CONFIRMED]',
+    name: 'Rotaract Club of Nairobi Parklands',
     category: 'HOST',
-    logoPlaceholderText: 'HOST CLUB LOGO',
-    description: 'Primary host club carrying leadership and venue mobilization for the 3 September 2026 fellowship.',
-    isConfirmed: false
+    logoPlaceholderText: 'RAC PARKLANDS',
+    description: 'Official Host Club for Rotaract Travel Hacks 2026 — confirmed August 2026, with the venue locked at Clarion Hotel, CBD, Nairobi.',
+    isConfirmed: true
   },
   {
-    id: 'p-cohost-1',
+    id: 'p-partner-lavington-jioni',
+    name: 'Rotaract Club of Lavington Jioni',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC LAVINGTON JIONI',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-langata',
     name: 'Rotaract Club of Langata',
     category: 'CO-HOST',
     logoPlaceholderText: 'RAC LANGATA',
-    description: 'Panel-affiliated club partner in District 9212 supporting member mobilization and cross-club outreach.',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
     isConfirmed: true
   },
   {
-    id: 'p-cohost-2',
-    name: 'Rotaract Club of Nairobi Thika Road',
+    id: 'p-partner-kikuyu',
+    name: 'Rotaract Club of Kikuyu',
     category: 'CO-HOST',
-    logoPlaceholderText: 'RAC THIKA ROAD',
-    description: 'Panel-affiliated club partner actively driving travel readiness and youth mobility awareness.',
+    logoPlaceholderText: 'RAC KIKUYU',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
     isConfirmed: true
   },
   {
-    id: 'p-cohost-3',
-    name: 'Rotaract Club of Nairobi Parklands',
+    id: 'p-partner-kitengela',
+    name: 'Rotaract Club of Kitengela',
     category: 'CO-HOST',
-    logoPlaceholderText: 'RAC PARKLANDS',
-    description: 'Panel-affiliated partner focused on RAS 2026 logistics and international service relations.',
+    logoPlaceholderText: 'RAC KITENGELA',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
     isConfirmed: true
   },
   {
-    id: 'p-cohost-4',
+    id: 'p-partner-nairobi-central',
+    name: 'Rotaract Club of Nairobi Central',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC NAIROBI CENTRAL',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-tuk',
+    name: 'Rotaract Club of Technical University of Kenya',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC TUK',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-uon',
+    name: 'Rotaract Club of University of Nairobi',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC UON',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-nai-muthaiga-north',
     name: 'Rotaract Club of Nairobi Muthaiga North',
     category: 'CO-HOST',
-    logoPlaceholderText: 'RAC MUTHAIGA NORTH',
-    description: 'Digital campaign & PR lead partner driving social media reach across African districts.',
+    logoPlaceholderText: 'RAC NAI MUTHAIGA NORTH',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-muthaiga',
+    name: 'Rotaract Club of Muthaiga',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC MUTHAIGA',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-karura',
+    name: 'Rotaract Club of Karura',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC KARURA',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
     isConfirmed: true
   },
   {
@@ -292,25 +379,8 @@ export const PARTNERS_SHOWCASE: Partner[] = [
     name: 'Rotary District 9212',
     category: 'STRATEGIC PARTNER',
     logoPlaceholderText: 'DISTRICT 9212',
-    description: 'Covering Kenya, Ethiopia, South Sudan, and Eritrea — supporting young leader global development.',
+    description: 'Covering Kenya, Ethiopia, South Sudan, and Eritrea — home district of the host club and panel.',
     isConfirmed: true
-  },
-  {
-    id: 'p-partner-d9214',
-    name: 'Rotary District 9214 Outreach',
-    category: 'STRATEGIC PARTNER',
-    logoPlaceholderText: 'DISTRICT 9214',
-    description: 'Covering Uganda and Tanzania — regional mobility collaboration for East African Rotaractors.',
-    isConfirmed: true
-  },
-  {
-    id: 'p-sponsor-1',
-    name: 'Travel & Mobility Sponsor [Open Tier]',
-    category: 'SPONSOR',
-    logoPlaceholderText: 'SPONSOR LOGO',
-    description: 'Tiered sponsorship opportunities open for flight aggregators, forex services, and travel agencies.',
-    websiteUrl: '/partners',
-    isConfirmed: false
   }
 ];
 
@@ -318,13 +388,13 @@ export const FAQS_LIST: FAQItem[] = [
   {
     id: 'faq-1',
     question: 'When and where is the Rotaract Travel Hacks 2026 fellowship taking place?',
-    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:00 PM to 7:30 PM EAT at a confirmed venue in Nairobi, Kenya. It is a 90-minute in-person fellowship event.',
+    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:30 PM to 8:30 PM EAT at the Clarion Hotel, CBD, Nairobi, Kenya. A KES 290 room charge is collected at entry via M-Pesa Buy Goods Till 555555.',
     category: 'EVENT'
   },
   {
     id: 'faq-2',
     question: 'Is registration free for Rotaractors and Rotarians?',
-    answer: 'Yes! Attendance is 100% free for all in-person registrants. Advance registration is required to receive event reminders, downloadable travel templates, and your personalized boarding pass ticket.',
+    answer: 'Online registration via this portal is free. In-person attendees pay a KES 290 room charge at the venue entrance via M-Pesa (Buy Goods Till: 555555 — Rotaract Nairobi Parklands). Advance registration is required to receive event reminders, downloadable travel templates, and your personalized boarding pass ticket.',
     category: 'REGISTRATION'
   },
   {
@@ -335,8 +405,8 @@ export const FAQS_LIST: FAQItem[] = [
   },
   {
     id: 'faq-4',
-    question: 'Why did the host club status change to [TO BE CONFIRMED]?',
-    answer: 'To protect the confirmed event date (3 September 2026) and the confirmed 5-member panel after a scheduling conflict arose with the initial host, the initiative was decoupled to a turnkey model. A new primary host club is currently being finalized among panel-affiliated clubs, preserving full project momentum.',
+    question: 'Why did the host club change during planning?',
+    answer: 'After a scheduling conflict arose with the initial host club (RAC Westlands) in early August 2026, the initiative was decoupled into a turnkey package to protect the confirmed date and panel. The Rotaract Club of Nairobi Parklands has since confirmed as the Official Host Club, with the venue locked at the Clarion Hotel, CBD — the date (3 September 2026) and five-member panel are fully unchanged.',
     category: 'EVENT'
   },
   {
