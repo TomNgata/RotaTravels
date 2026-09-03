@@ -127,6 +127,7 @@ export default function App() {
         currentTab={currentTab}
         onNavigate={(tab) => setCurrentTab(tab)}
         onOpenRegister={() => setIsRegisterOpen(true)}
+        onOpenQuestion={() => handleOpenQuestionModal()}
         currentHost={eventConfig.currentHost}
       />
 

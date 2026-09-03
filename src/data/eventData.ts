@@ -8,97 +8,88 @@ export const INITIAL_EVENT_CONFIG: EventConfig = {
   dateFormatted: 'Thursday, 3 September 2026',
   timeFormatted: '6:00 PM – 7:30 PM EAT (15:00 UTC)',
   durationMinutes: 90,
-  format: 'Hybrid (In-Person + Global Live Stream)',
-  expectedAttendance: '100+ Live Attendees | 150+ Portal Registrations',
+  format: 'In-Person Fellowship (Nairobi)',
+  expectedAttendance: '100+ In-Person Attendees',
   confirmedDate: '3 September 2026',
-  currentHost: '[HOST CLUB — TO BE CONFIRMED]',
-  isHostConfirmed: false,
+  currentHost: 'Rotaract Club of Nairobi Parklands',
+  isHostConfirmed: true,
   venueName: 'Host Venue [Pending Confirmation]',
-  venueAddress: 'Nairobi, Kenya & Online via Zoom/YouTube Live',
+  venueAddress: 'Nairobi, Kenya',
   isVenueConfirmed: false,
-  phase: 'pre-event',
+  phase: 'during-event',
   budgetKes: 61500,
-  liveStreamUrl: 'https://youtube.com/live/rotaract-travel-hacks-2026',
   hashtags: ['#RotaTravelHacks2026', '#GlobalRotaract', '#PathToRAS2026', '#RotaractD9212']
 };
 
 export const CONFIRMED_PANELISTS: Speaker[] = [
   {
-    id: 'speaker-tom-ngata',
-    name: 'IPP Tom Ngata',
-    title: 'Initiative Champion & Past President',
-    club: 'Rotaract Club of Westlands',
+    id: 'speaker-alvin-muchai',
+    name: 'PP Alvin Muchai',
+    title: 'Past President',
+    club: 'Rotaract Club of Nairobi Thika Road',
     district: 'District 9212',
-    role: 'Travel Hacks Visionary & Lead Moderator',
-    bio: 'Past President Tom Ngata conceptualized Rotaract Travel Hacks 2026 to systematically tackle visa and mobility barriers facing African youth in Rotary. Having navigated cross-border travel across multiple continents for professional and Rotaract leadership engagements, he leads the initiative’s strategic direction.',
-    travelMilestones: ['Visits across 12+ African & European Countries', 'Rotary International Convention Delegate', 'Lead Architect of RotaTravel Knowledge Hub'],
-    expertise: ['Visa Strategy & Bureaucracy Navigation', 'Official Invitation & Sponsorship Protocols', 'Cross-District Fellowship Building'],
-    imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500',
-    highlightDestination: 'Schengen Area & East Africa',
-    featured: true,
-    socialLinks: {
-      linkedin: 'https://linkedin.com',
-      twitter: 'https://x.com'
-    }
+    role: 'Panel Specialist — Visa & Global Mobility',
+    bio: 'PP Alvin Muchai is a past president of the Rotaract Club of Nairobi Thika Road with extensive experience navigating international travel documentation and visa processes. Selected through the structured voting process for his demonstrated cross-border travel expertise.',
+    travelMilestones: ['Past President — RAC Nairobi Thika Road', 'International Rotaract Conference Attendee', 'Cross-Border Travel Veteran'],
+    expertise: ['Visa Application Strategy', 'International Document Preparation', 'Global Mobility Planning'],
+    imageUrl: '/speakers/alvin-muchai.jpg',
+    highlightDestination: 'East Africa & Beyond',
+    featured: true
   },
   {
-    id: 'speaker-sam-gathaga',
-    name: 'Rtr Sam Gathaga',
-    title: 'Global Campaign Lead',
-    club: 'Rotaract Club of Nairobi Muthaiga North',
-    district: 'District 9212',
-    role: 'Digital Strategy & PR Director',
-    bio: 'Rtr Sam Gathaga drives the global digital strategy and public relations campaign for Rotaract Travel Hacks. An experienced traveller with expertise in digital story-telling, remote work mobility, and flight hacks, he specializes in turning complex documentation into bite-sized actionable guides.',
-    travelMilestones: ['Global Digital Nomad Experience', 'Multi-country Youth Mobility Advocate', 'Campaign Lead reaching 5,000+ Rotaractors'],
-    expertise: ['Flight Hacking & Mileage Optimization', 'Digital Travel Documentation', 'Remote Travel Budgeting'],
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500',
-    highlightDestination: 'West Africa & Digital Hubs',
-    featured: true,
-    socialLinks: {
-      linkedin: 'https://linkedin.com',
-      twitter: 'https://x.com'
-    }
-  },
-  {
-    id: 'speaker-panelist-3',
-    name: 'Rtr Panelist 3 [RAC Langata]',
-    title: 'International Service Specialist',
+    id: 'speaker-ruthie-mwathi',
+    name: 'Rtr Ruthie Mwathi',
+    title: 'Rotaractor',
     club: 'Rotaract Club of Langata',
     district: 'District 9212',
-    role: 'Panel Specialist — Visa & Financial Proof',
-    bio: 'Confirmed member of the 5-person panel, selected via structured voting for extensive international travel track record. Specializes in personal financial documentation alignment, embassy interview readiness, and group delegation logistics.',
-    travelMilestones: ['Attended 3+ International Rotaract Conferences', 'Successfully Processed Multiple Complex Visas', 'RAS Mobility Working Group'],
-    expertise: ['Bank Statement Optimization', 'Sponsorship Verification', 'Embassy Interview Readiness'],
-    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=500',
+    role: 'Panel Specialist — Travel Documentation & Readiness',
+    bio: 'Rtr Ruthie Mwathi of the Rotaract Club of Langata brings practical expertise in travel readiness, financial documentation, and preparing for international Rotaract engagements. A seasoned traveller selected for her hands-on experience navigating complex visa requirements.',
+    travelMilestones: ['International Rotaract Event Participant', 'Visa Application Specialist', 'RAS 2026 Preparation Advocate'],
+    expertise: ['Financial Documentation', 'Embassy Processes', 'Travel Readiness Planning'],
+    imageUrl: '/speakers/ruthie-mwathi.jpg',
     highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
     featured: true
   },
   {
-    id: 'speaker-panelist-4',
-    name: 'Rtr Panelist 4 [RAC Nairobi Thika Road]',
-    title: 'Global Mobility & Budget Strategist',
-    club: 'Rotaract Club of Nairobi Thika Road',
+    id: 'speaker-wanjiku-ngure',
+    name: 'Rtr Wanjiku Ngure',
+    title: 'Rotaractor',
+    club: 'Rotaract Club of Langata',
     district: 'District 9212',
-    role: 'Panel Specialist — Travel Readiness & Forex',
-    bio: 'Confirmed panelist with hands-on experience planning affordable international group travel for Rotaract delegations. Expert on currency conversion hacks, group accommodation bookings, travel insurance, and border clearance protocols.',
-    travelMilestones: ['Navigated 8+ Border Crossings in Africa', 'Group Travel Organizer for 20+ Delegates', 'Budget Travel Masterclass Instructor'],
-    expertise: ['Group Accommodation Hacks', 'Travel Insurance & Health Compliance', 'Foreign Exchange & Card Security'],
-    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=500',
-    highlightDestination: 'Southern & West Africa',
+    role: 'Panel Specialist — Budgeting & Flight Hacks',
+    bio: 'Rtr Wanjiku Ngure of the Rotaract Club of Langata is passionate about making international travel accessible to Rotaractors across Africa. She shares practical tips on flight budgeting, accommodation hacks, and cost-effective global mobility strategies.',
+    travelMilestones: ['Multi-Country Travel Experience', 'Budget Travel Advocate', 'Rotaract Africa Fellowship Participant'],
+    expertise: ['Flight Budgeting & Hacks', 'Accommodation Planning', 'Affordable International Travel'],
+    imageUrl: '/speakers/wanjiku-ngure.jpg',
+    highlightDestination: 'West & East Africa',
     featured: true
   },
   {
-    id: 'speaker-panelist-5',
-    name: 'Rtr Panelist 5 [RAC Nairobi Parklands]',
-    title: 'RAS 2026 Ambassador & Protocol Officer',
+    id: 'speaker-bedan',
+    name: 'Rtr Bedan',
+    title: 'Rotaractor',
     club: 'Rotaract Club of Nairobi Parklands',
     district: 'District 9212',
-    role: 'Panel Specialist — Path to RAS 2026',
-    bio: 'Confirmed panelist focusing on logistics, entry authorizations, and travel preparations for the upcoming Rotaract Africa Summit (RAS 2026) in Côte d\'Ivoire. Connects African Rotaractors with diplomatic and institutional travel protocols.',
-    travelMilestones: ['Active Participant in Cross-District Rotaract Exchanges', 'Lead Coordinator for RAS 2026 Delegation Prep', 'Expert on ECOWAS & EAC Visa Rules'],
-    expertise: ['RAS 2026 Entry & Transit Protocols', 'ECOWAS & EAC Visa Exemptions', 'Official Club Authorization Letters'],
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=500',
-    highlightDestination: 'Côte d\'Ivoire & Francophone Africa',
+    role: 'Panel Specialist — Path to RAS 2026 & ECOWAS',
+    bio: 'Rtr Bedan of the Rotaract Club of Nairobi Parklands brings firsthand experience with international travel across multiple continents, including navigating ECOWAS visa frameworks and planning for Rotaract Africa Summit logistics. Known for his adventurous global travel track record.',
+    travelMilestones: ['Multi-Continent Travel Experience', 'ECOWAS & EAC Visa Navigation Expert', 'RAS 2026 Delegation Coordinator'],
+    expertise: ['ECOWAS & EAC Visa Rules', 'International Border Protocols', 'Group Travel Logistics'],
+    imageUrl: '/speakers/bedan.jpg',
+    highlightDestination: 'Canada, Americas & Francophone Africa',
+    featured: true
+  },
+  {
+    id: 'speaker-vicky-kinyua',
+    name: 'Rtr Vicky Kinyua',
+    title: 'Rotaractor',
+    club: 'Rotaract Club of Nairobi Parklands',
+    district: 'District 9212',
+    role: 'Panel Specialist — Document Preparation & Official Protocols',
+    bio: 'Rtr Vicky Kinyua of the Rotaract Club of Nairobi Parklands specializes in official travel documentation, club authorization letters, and institutional travel protocols for Rotaract delegations. A meticulous planner helping Rotaractors get their paperwork right the first time.',
+    travelMilestones: ['Official Travel Protocol Expert', 'Club Authorization Letter Specialist', 'International Rotaract Delegate'],
+    expertise: ['Official Club Authorization Letters', 'Document Preparation Checklists', 'Embassy Interview Preparation'],
+    imageUrl: '/speakers/vicky-kinyua.jpg',
+    highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
     featured: true
   }
 ];
@@ -158,7 +149,7 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
     iconName: 'MessageSquare',
     keyTopics: [
       'Answering top pre-submitted questions from registration portal',
-      'Live floor questions from in-person and virtual Zoom audience',
+      'Live floor questions from in-person attendees',
       'Rapid-fire solutions for complex individual travel scenarios',
       'Announcement of RotaTravel Knowledge Hub community access'
     ],
@@ -327,13 +318,13 @@ export const FAQS_LIST: FAQItem[] = [
   {
     id: 'faq-1',
     question: 'When and where is the Rotaract Travel Hacks 2026 fellowship taking place?',
-    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:00 PM to 7:30 PM EAT. It is a 90-minute hybrid event — you can attend in-person in Nairobi (venue details confirmed upon host finalization) or join virtually via our global live stream.',
+    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:00 PM to 7:30 PM EAT at a confirmed venue in Nairobi, Kenya. It is a 90-minute in-person fellowship event.',
     category: 'EVENT'
   },
   {
     id: 'faq-2',
     question: 'Is registration free for Rotaractors and Rotarians?',
-    answer: 'Yes! Attendance is 100% free for both in-person and virtual participants. However, advance registration is required to receive streaming links, event reminders, downloadable travel templates, and personalized boarding pass tickets.',
+    answer: 'Yes! Attendance is 100% free for all in-person registrants. Advance registration is required to receive event reminders, downloadable travel templates, and your personalized boarding pass ticket.',
     category: 'REGISTRATION'
   },
   {
@@ -368,8 +359,8 @@ export const FAQS_LIST: FAQItem[] = [
   },
   {
     id: 'faq-8',
-    question: 'Will recordings be available if I cannot attend live on 3 September 2026?',
-    answer: 'Yes. Following the event, session recordings, key takeaways, and panel slide decks will be uploaded directly to the Knowledge Hub, ensuring the content remains an evergreen resource.',
-    category: 'VIRTUAL ATTENDANCE'
+    question: 'Will session recordings and resources be available after the event?',
+    answer: 'Yes. Following the event, session recordings, key takeaways, and panel slide decks will be uploaded directly to the Knowledge Hub, ensuring the content remains an evergreen resource for all Rotaractors.',
+    category: 'EVENT'
   }
 ];
