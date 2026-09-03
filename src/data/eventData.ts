@@ -33,7 +33,7 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
     travelMilestones: ['International travel highlights to be confirmed'],
     expertise: ['International Travel Experience'],
-    imageUrl: '/panelists/photo_2026-08-21_19-59-57.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_20-00-07.jpg',
     featured: true
   },
   {
@@ -59,7 +59,7 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
     travelMilestones: ['International travel highlights to be confirmed'],
     expertise: ['International Travel Experience'],
-    imageUrl: '/panelists/photo_2026-08-21_20-00-00.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_19-59-57.jpg',
     featured: true
   },
   {
@@ -85,7 +85,7 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
     bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, representing host club Rotaract Club of Nairobi Parklands. Selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
     travelMilestones: ['International travel highlights to be confirmed'],
     expertise: ['International Travel Experience'],
-    imageUrl: '/panelists/photo_2026-08-21_20-00-07.jpg',
+    imageUrl: '/panelists/photo_2026-08-21_20-00-00.jpg',
     featured: true
   }
 ];
