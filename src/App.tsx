@@ -19,6 +19,10 @@ import { FAQAccordion } from './components/faq/FAQAccordion';
 import { ContactSection } from './components/contact/ContactSection';
 import { Footer } from './components/layout/Footer';
 
+import { QuickActionsCTA } from './components/home/QuickActionsCTA';
+import { SpeakerPreviewStrip } from './components/speakers/SpeakerPreviewStrip';
+import { EventGallery } from './components/home/EventGallery';
+
 import { RegistrationModal } from './components/registration/RegistrationModal';
 import { SubmitHackModal } from './components/hacks/SubmitHackModal';
 import { QuestionSubmissionForm } from './components/questions/QuestionSubmissionForm';
@@ -131,6 +135,17 @@ export default function App() {
               onOpenRegister={() => setIsRegisterOpen(true)}
             />
 
+            <QuickActionsCTA 
+              onOpenQuestionModal={() => handleOpenQuestionModal()}
+              onOpenHackModal={() => setIsHackModalOpen(true)}
+              onOpenRegister={() => setIsRegisterOpen(true)}
+            />
+
+            <SpeakerPreviewStrip 
+              speakers={panelists}
+              onNavigateToSpeakers={() => setCurrentTab('speakers')}
+            />
+
             <WhyThisMatters
               onNavigate={(tab) => setCurrentTab(tab)}
               onOpenRegister={() => setIsRegisterOpen(true)}
@@ -151,6 +166,8 @@ export default function App() {
               hacks={hacks}
               onOpenSubmitModal={() => setIsHackModalOpen(true)}
             />
+
+            <EventGallery currentPhase={eventConfig.phase} />
 
             <PartnerShowcase
               partners={partners}

@@ -296,28 +296,84 @@ export const PARTNERS_SHOWCASE: Partner[] = [
     isConfirmed: true
   },
   {
-    id: 'p-cohost-1',
+    id: 'p-partner-lavington-jioni',
+    name: 'Rotaract Club of Lavington Jioni',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC LAVINGTON JIONI',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-langata',
     name: 'Rotaract Club of Langata',
     category: 'CO-HOST',
     logoPlaceholderText: 'RAC LANGATA',
-    description: 'Panel-affiliated club in District 9212. Co-host partnership invitation issued 21 August 2026 — response pending.',
-    isConfirmed: false
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
   },
   {
-    id: 'p-cohost-2',
-    name: 'Rotaract Club of Nairobi Thika Road',
+    id: 'p-partner-kikuyu',
+    name: 'Rotaract Club of Kikuyu',
     category: 'CO-HOST',
-    logoPlaceholderText: 'RAC THIKA ROAD',
-    description: 'Panel-affiliated club in District 9212. Co-host partnership invitation issued 21 August 2026 — response pending.',
-    isConfirmed: false
+    logoPlaceholderText: 'RAC KIKUYU',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
   },
   {
-    id: 'p-cohost-3',
+    id: 'p-partner-kitengela',
+    name: 'Rotaract Club of Kitengela',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC KITENGELA',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-nairobi-central',
+    name: 'Rotaract Club of Nairobi Central',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC NAIROBI CENTRAL',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-tuk',
+    name: 'Rotaract Club of Technical University of Kenya',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC TUK',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-uon',
+    name: 'Rotaract Club of University of Nairobi',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC UON',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-nai-muthaiga-north',
     name: 'Rotaract Club of Nairobi Muthaiga North',
     category: 'CO-HOST',
-    logoPlaceholderText: 'RAC MUTHAIGA NORTH',
-    description: 'Home club of the Global Campaign Lead. Co-host partnership invitation issued 21 August 2026 — response pending.',
-    isConfirmed: false
+    logoPlaceholderText: 'RAC NAI MUTHAIGA NORTH',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-muthaiga',
+    name: 'Rotaract Club of Muthaiga',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC MUTHAIGA',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
+  },
+  {
+    id: 'p-partner-karura',
+    name: 'Rotaract Club of Karura',
+    category: 'CO-HOST',
+    logoPlaceholderText: 'RAC KARURA',
+    description: 'Official partner club for Rotaract Travel Hacks 2026.',
+    isConfirmed: true
   },
   {
     id: 'p-partner-d9212',
@@ -325,40 +381,7 @@ export const PARTNERS_SHOWCASE: Partner[] = [
     category: 'STRATEGIC PARTNER',
     logoPlaceholderText: 'DISTRICT 9212',
     description: 'Covering Kenya, Ethiopia, South Sudan, and Eritrea — home district of the host club and panel.',
-    isConfirmed: false
-  },
-  {
-    id: 'p-partner-d9215',
-    name: 'Rotary District 9215',
-    category: 'STRATEGIC PARTNER',
-    logoPlaceholderText: 'DISTRICT 9215',
-    description: 'District partnership + Instagram campaign invitation issued 21 August 2026 — response pending.',
-    isConfirmed: false
-  },
-  {
-    id: 'p-partner-d9216',
-    name: 'Rotary District 9216',
-    category: 'STRATEGIC PARTNER',
-    logoPlaceholderText: 'DISTRICT 9216',
-    description: 'District partnership + Instagram campaign invitation issued 21 August 2026 — response pending.',
-    isConfirmed: false
-  },
-  {
-    id: 'p-partner-d9214',
-    name: 'Rotary District 9214',
-    category: 'STRATEGIC PARTNER',
-    logoPlaceholderText: 'DISTRICT 9214',
-    description: 'Covering Uganda and Tanzania — regional mobility collaboration for East African Rotaractors. Courtesy outreach pending.',
-    isConfirmed: false
-  },
-  {
-    id: 'p-sponsor-1',
-    name: 'Travel & Mobility Sponsor [Open Tier]',
-    category: 'SPONSOR',
-    logoPlaceholderText: 'SPONSOR LOGO',
-    description: 'Tiered sponsorship opportunities open for flight aggregators, forex services, and travel agencies.',
-    websiteUrl: '/partners',
-    isConfirmed: false
+    isConfirmed: true
   }
 ];
 
