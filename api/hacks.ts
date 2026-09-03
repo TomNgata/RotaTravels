@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import type { TravelHackSubmission } from '../src/types';
-import { listHacks, insertHack, newId } from './_lib/store';
-import { asString, clientIp, rateLimit } from './_lib/http';
+import { listHacks, insertHack, newId } from './_lib/store.js';
+import { asString, clientIp, rateLimit } from './_lib/http.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse): Promise<void> {
   try {

@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import type { PreEventQuestion } from '../src/types';
-import { insertQuestion, newId } from './_lib/store';
-import { asString, clientIp, isAuthorized, rateLimit, unauthorized } from './_lib/http';
+import { insertQuestion, newId } from './_lib/store.js';
+import { asString, clientIp, isAuthorized, rateLimit, unauthorized } from './_lib/http.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse): Promise<void> {
   try {
