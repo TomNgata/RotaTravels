@@ -55,7 +55,7 @@ export const EventModeBanner: React.FC<EventModeBannerProps> = ({
                 ? 'bg-emerald-600 text-white shadow-sm'
                 : 'text-slate-300 hover:text-white hover:bg-slate-800'
             }`}
-            title="3 September Live Fellowship: Stream & Live Q&A"
+            title="3 September Live Fellowship: Live Q&A"
           >
             <PlayCircle className="w-3.5 h-3.5 animate-pulse text-emerald-300" />
             Live Event

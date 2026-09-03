@@ -118,7 +118,9 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                 You’re Registered!
               </h3>
               <p className="text-xs text-slate-600">
-                Your official delegate pass for <strong className="text-slate-900">Thursday, 3 September 2026</strong> has been generated below.
+                Your official delegate pass for <strong className="text-slate-900">Thursday, 3 September 2026</strong> has been generated below. 
+                <br className="mt-1" />
+                <span className="text-[#00246C] font-semibold">Take a moment to explore the Travel Hub and Resources on the site!</span>
               </p>
             </div>
 
@@ -134,7 +136,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
             {/* Form Header */}
             <div className="space-y-2 mb-6 pr-8">
               <span className="px-3 py-1 rounded-full bg-red-100 text-[#D41B2C] text-xs font-black uppercase tracking-wider">
-                FREE DELEGATE REGISTRATION
+                DELEGATE REGISTRATION & PAYMENT
               </span>
 
               <h3 className="text-2xl sm:text-3xl font-black text-[#00246C]">
@@ -271,8 +273,9 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
 
                   {/* M-Pesa Message */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">
-                      M-Pesa Confirmation Message *
+                    <label className="block text-xs font-bold text-slate-700 mb-1 flex items-center justify-between">
+                      <span>M-Pesa Confirmation Message *</span>
+                      <span className="text-[10px] text-emerald-600">Pay KES 290 to Buy Goods Till: 555555</span>
                     </label>
                     <textarea
                       required
@@ -333,7 +336,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                         </>
                       ) : (
                         <>
-                          <span>Complete Free Registration</span>
+                          <span>Complete Registration</span>
                           <CheckCircle2 className="w-4 h-4 text-amber-300" />
                         </>
                       )}

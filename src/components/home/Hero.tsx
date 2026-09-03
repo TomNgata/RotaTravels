@@ -47,6 +47,10 @@ export const Hero: React.FC<HeroProps> = ({
             <ShieldCheck className="w-3.5 h-3.5 text-red-400" />
             In-Person Fellowship • Nairobi
           </span>
+          <span className="px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 font-medium text-xs hidden sm:flex items-center gap-1.5">
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+            Buy Goods Till: 555555 (Rotaract Nairobi Parklands)
+          </span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
