@@ -97,7 +97,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={onOpenRegister}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#D41B2C] hover:bg-[#B51322] text-white font-bold text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>Register Free</span>
+              <span>Register & Pay</span>
               <ArrowRight className="w-4 h-4 text-amber-300" />
             </button>
           </div>
@@ -177,7 +177,7 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className="w-full py-3 rounded-xl bg-[#D41B2C] text-white font-bold text-center text-sm shadow-md flex items-center justify-center gap-2"
             >
-              <span>Register Now for Free</span>
+              <span>Register & Pay</span>
               <ArrowRight className="w-4 h-4 text-amber-300" />
             </button>
           </div>
