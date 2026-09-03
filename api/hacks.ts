@@ -43,7 +43,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
       authorClub: asString(body.authorClub, 160) || 'Rotaract Club',
       authorRole: asString(body.authorRole, 80) || 'Member',
       destinationCountry: asString(body.destinationCountry, 80) || 'Global',
-      category: asString(body.category, 60) || 'Visa Application',
+      category: (asString(body.category, 60) || 'Visa Application') as TravelHackSubmission['category'],
       hackTitle,
       hackDetails,
       status: 'approved',
