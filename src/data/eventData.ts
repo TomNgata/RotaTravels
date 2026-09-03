@@ -6,19 +6,18 @@ export const INITIAL_EVENT_CONFIG: EventConfig = {
   subtitle: 'Fellowship & Global Digital Campaign',
   dateIso: '2026-09-03T18:30:00+03:00',
   dateFormatted: 'Thursday, 3 September 2026',
-  timeFormatted: '6:30 PM – 8:30 PM EAT (15:30 UTC)',
+  timeFormatted: '6:30 PM – 8:30 PM EAT',
   durationMinutes: 120,
-  format: 'Hybrid (In-Person + Global Live Stream)',
-  expectedAttendance: '100+ Live Attendees | 150+ Portal Registrations',
+  format: 'In-Person Fellowship (Nairobi)',
+  expectedAttendance: '100+ In-Person Attendees',
   confirmedDate: '3 September 2026',
   currentHost: 'Rotaract Club of Nairobi Parklands',
   isHostConfirmed: true,
   venueName: 'Clarion Hotel, CBD, Nairobi',
-  venueAddress: 'Clarion Hotel, Central Business District, Nairobi, Kenya & Online Live Stream',
+  venueAddress: 'Clarion Hotel, Central Business District, Nairobi, Kenya',
   isVenueConfirmed: true,
-  phase: 'pre-event',
+  phase: 'during-event',
   budgetKes: 61500,
-  liveStreamUrl: 'https://youtube.com/live/rotaract-travel-hacks-2026',
   hashtags: ['#RotaractTravelHacks', '#RAS2026', '#RACNairobiParklands']
 };
 
@@ -150,7 +149,7 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
     iconName: 'MessageSquare',
     keyTopics: [
       'Answering top pre-submitted questions from registration portal',
-      'Live floor questions from in-person and virtual Zoom audience',
+      'Live floor questions from in-person attendees',
       'Rapid-fire solutions for complex individual travel scenarios',
       'Announcement of RotaTravel Knowledge Hub community access'
     ],
@@ -166,7 +165,7 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     title: 'Registration, Networking & Arrival',
     format: 'Networking & Fellowship',
     speakerIds: [],
-    description: 'Delegate check-in at the Clarion Hotel registration desk, early networking, and seat allocation. A Kshs 100 room charge applies at entry.',
+    description: 'Delegate check-in at the Clarion Hotel registration desk, early networking, and seat allocation. A KES 290 room charge applies at entry — pay via M-Pesa Buy Goods Till 555555 (Rotaract Nairobi Parklands).',
     keyTakeaways: [
       'Early arrival ensures a prompt 18:30 start',
       'Registration desk managed by the host club volunteer team'
@@ -179,7 +178,7 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     title: 'Welcome & Opening Remarks',
     format: 'Welcome & Protocol',
     speakerIds: [],
-    description: 'Official welcome by Host Club President Rtr Sydney (Rotaract Club of Nairobi Parklands), Rotary protocol observances, and recognition of co-host clubs, partners, and dignitaries.',
+    description: 'Official welcome by the Host Club President (Rotaract Club of Nairobi Parklands), Rotary protocol observances, and recognition of co-host clubs, partners, and dignitaries.',
     keyTakeaways: [
       'Understanding the mission behind the initiative',
       'Recognition of partner clubs and districts'
@@ -389,13 +388,13 @@ export const FAQS_LIST: FAQItem[] = [
   {
     id: 'faq-1',
     question: 'When and where is the Rotaract Travel Hacks 2026 fellowship taking place?',
-    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:30 PM to 8:30 PM EAT at the Clarion Hotel, CBD, Nairobi, Kenya (Kshs 100 room charge at entry). It is a hybrid event — you can attend in-person or join virtually via our global live stream.',
+    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:30 PM to 8:30 PM EAT at the Clarion Hotel, CBD, Nairobi, Kenya. A KES 290 room charge is collected at entry via M-Pesa Buy Goods Till 555555.',
     category: 'EVENT'
   },
   {
     id: 'faq-2',
     question: 'Is registration free for Rotaractors and Rotarians?',
-    answer: 'Registration is 100% free for both in-person and virtual participants. In-person attendees pay a Kshs 100 room charge at the venue entrance. Advance registration is required to receive streaming links, event reminders, downloadable travel templates, and personalized boarding pass tickets.',
+    answer: 'Online registration via this portal is free. In-person attendees pay a KES 290 room charge at the venue entrance via M-Pesa (Buy Goods Till: 555555 — Rotaract Nairobi Parklands). Advance registration is required to receive event reminders, downloadable travel templates, and your personalized boarding pass ticket.',
     category: 'REGISTRATION'
   },
   {
@@ -430,8 +429,8 @@ export const FAQS_LIST: FAQItem[] = [
   },
   {
     id: 'faq-8',
-    question: 'Will recordings be available if I cannot attend live on 3 September 2026?',
-    answer: 'Yes. Following the event, session recordings, key takeaways, and panel slide decks will be uploaded directly to the Knowledge Hub, ensuring the content remains an evergreen resource.',
-    category: 'VIRTUAL ATTENDANCE'
+    question: 'Will session recordings and resources be available after the event?',
+    answer: 'Yes. Following the event, session recordings, key takeaways, and panel slide decks will be uploaded directly to the Knowledge Hub, ensuring the content remains an evergreen resource for all Rotaractors.',
+    category: 'EVENT'
   }
 ];

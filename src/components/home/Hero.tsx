@@ -45,7 +45,11 @@ export const Hero: React.FC<HeroProps> = ({
 
           <span className="px-3.5 py-1.5 rounded-full bg-red-500/20 text-red-300 border border-red-400/30 font-medium text-xs hidden sm:flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-red-400" />
-            90-Min Hybrid Session
+            In-Person Fellowship • Nairobi
+          </span>
+          <span className="px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 font-medium text-xs hidden sm:flex items-center gap-1.5">
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+            Buy Goods Till: 555555 (Rotaract Nairobi Parklands)
           </span>
         </div>
 
@@ -170,7 +174,7 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
                 <div>
                   <span className="text-slate-400 font-semibold block uppercase text-[10px]">FORMAT</span>
-                  <strong className="text-slate-900 font-bold">In-Person + Live Stream</strong>
+                  <strong className="text-slate-900 font-bold">In-Person Only</strong>
                 </div>
                 <div>
                   <span className="text-slate-400 font-semibold block uppercase text-[10px]">TIME</span>

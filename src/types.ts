@@ -147,6 +147,7 @@ export interface EventRegistration {
   role: string;
   attendanceMode: AttendanceMode;
   countryOfResidence: string;
+  mpesaMessage?: string;
   questionForPanel?: string;
   registeredAt: string;
 }
@@ -165,5 +166,5 @@ export interface FAQItem {
   id: string;
   question: string;
   answer: string;
-  category: 'EVENT' | 'REGISTRATION' | 'TRAVEL' | 'VISA' | 'VIRTUAL ATTENDANCE' | 'PARTNERSHIPS' | 'KNOWLEDGE HUB';
+  category: 'EVENT' | 'REGISTRATION' | 'TRAVEL' | 'VISA' | 'PARTNERSHIPS' | 'KNOWLEDGE HUB';
 }

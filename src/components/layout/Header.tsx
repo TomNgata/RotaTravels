@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Compass, Calendar, Users, MapPin, BookOpen, Handshake, HelpCircle, Menu, X, ArrowRight, ShieldAlert } from 'lucide-react';
+import { Compass, Calendar, Users, MapPin, BookOpen, Handshake, HelpCircle, Menu, X, ArrowRight, ShieldAlert, MessageSquare } from 'lucide-react';
 
 interface HeaderProps {
   currentTab: string;
   onNavigate: (tab: string) => void;
   onOpenRegister: () => void;
+  onOpenQuestion: () => void;
   currentHost: string;
 }
 
@@ -12,6 +13,7 @@ export const Header: React.FC<HeaderProps> = ({
   currentTab,
   onNavigate,
   onOpenRegister,
+  onOpenQuestion,
   currentHost
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -85,16 +87,30 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Right Action CTA */}
           <div className="hidden sm:flex items-center gap-3">
             <button
+              onClick={onOpenQuestion}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-[#00246C] font-bold text-sm border border-slate-200 transition-all"
+            >
+              <MessageSquare className="w-4 h-4 text-[#D41B2C]" />
+              <span>Ask a Question</span>
+            </button>
+            <button
               onClick={onOpenRegister}
               className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#D41B2C] hover:bg-[#B51322] text-white font-bold text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span>Register Free</span>
+              <span>Register & Pay</span>
               <ArrowRight className="w-4 h-4 text-amber-300" />
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 lg:hidden">
+            <button
+              onClick={onOpenQuestion}
+              className="p-2 rounded-lg bg-slate-100 text-[#00246C] sm:hidden"
+              aria-label="Ask a question"
+            >
+              <MessageSquare className="w-5 h-5 text-[#D41B2C]" />
+            </button>
             <button
               onClick={onOpenRegister}
               className="px-3.5 py-1.5 rounded-lg bg-[#D41B2C] text-white text-xs font-bold sm:hidden"
@@ -143,7 +159,17 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col gap-2">
+            <button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                onOpenQuestion();
+              }}
+              className="w-full py-3 rounded-xl bg-slate-100 text-[#00246C] font-bold text-center text-sm flex items-center justify-center gap-2 border border-slate-200"
+            >
+              <MessageSquare className="w-4 h-4 text-[#D41B2C]" />
+              <span>Ask the Panelists a Question</span>
+            </button>
             <button
               onClick={() => {
                 setIsMobileMenuOpen(false);
@@ -151,7 +177,7 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className="w-full py-3 rounded-xl bg-[#D41B2C] text-white font-bold text-center text-sm shadow-md flex items-center justify-center gap-2"
             >
-              <span>Register Now for Free</span>
+              <span>Register & Pay</span>
               <ArrowRight className="w-4 h-4 text-amber-300" />
             </button>
           </div>
