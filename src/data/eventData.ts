@@ -7,7 +7,7 @@ export const INITIAL_EVENT_CONFIG: EventConfig = {
   dateIso: '2026-09-03T18:30:00+03:00',
   dateFormatted: 'Thursday, 3 September 2026',
   timeFormatted: '6:30 PM – 8:30 PM EAT (15:30 UTC)',
-  durationMinutes: 90,
+  durationMinutes: 120,
   format: 'Hybrid (In-Person + Global Live Stream)',
   expectedAttendance: '100+ Live Attendees | 150+ Portal Registrations',
   confirmedDate: '3 September 2026',
@@ -26,66 +26,71 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
   {
     id: 'speaker-ruthie-mwathi',
     name: 'Rtr Ruthie Mwathi',
-    title: 'Confirmed Panelist',
+    title: 'Rotaractor',
     club: 'Rotaract Club of Langata',
     district: 'District 9212',
-    role: 'Panelist — Rotaract Travel Hacks 2026',
-    bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
-    travelMilestones: ['International travel highlights to be confirmed'],
-    expertise: ['International Travel Experience'],
+    role: 'Panel Specialist — Travel Documentation & Readiness',
+    bio: 'Rtr Ruthie Mwathi of the Rotaract Club of Langata brings practical expertise in travel readiness, financial documentation, and preparing for international Rotaract engagements. A seasoned traveller selected through the structured voting process for her hands-on experience navigating complex visa requirements.',
+    travelMilestones: ['International Rotaract Event Participant', 'Visa Application Specialist', 'RAS 2026 Preparation Advocate'],
+    expertise: ['Financial Documentation', 'Embassy Processes', 'Travel Readiness Planning'],
     imageUrl: '/panelists/photo_2026-08-21_20-00-07.jpg',
+    highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
     featured: true
   },
   {
     id: 'speaker-alvin-muchai',
     name: 'PP Alvin Muchai',
-    title: 'Past President & Confirmed Panelist',
+    title: 'Past President',
     club: 'Rotaract Club of Nairobi Thika Road',
     district: 'District 9212',
-    role: 'Panelist — Rotaract Travel Hacks 2026',
-    bio: 'Past President of the Rotaract Club of Nairobi Thika Road and confirmed member of the five-person Rotaract Travel Hacks 2026 panel, selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
-    travelMilestones: ['International travel highlights to be confirmed'],
-    expertise: ['International Travel Experience'],
+    role: 'Panel Specialist — Visa & Global Mobility',
+    bio: 'PP Alvin Muchai is a past president of the Rotaract Club of Nairobi Thika Road with extensive experience navigating international travel documentation and visa processes. Selected through the structured voting process for his demonstrated cross-border travel expertise.',
+    travelMilestones: ['Past President — RAC Nairobi Thika Road', 'International Rotaract Conference Attendee', 'Cross-Border Travel Veteran'],
+    expertise: ['Visa Application Strategy', 'International Document Preparation', 'Global Mobility Planning'],
     imageUrl: '/panelists/photo_2026-08-21_19-59-51.jpg',
+    highlightDestination: 'East Africa & Beyond',
     featured: true
   },
   {
     id: 'speaker-wanjiku-ngure',
     name: 'Rtr Wanjiku Ngure',
-    title: 'Confirmed Panelist',
+    title: 'Rotaractor',
     club: 'Rotaract Club of Langata',
     district: 'District 9212',
-    role: 'Panelist — Rotaract Travel Hacks 2026',
-    bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
-    travelMilestones: ['International travel highlights to be confirmed'],
-    expertise: ['International Travel Experience'],
+    role: 'Panel Specialist — Budgeting & Flight Hacks',
+    bio: 'Rtr Wanjiku Ngure of the Rotaract Club of Langata is passionate about making international travel accessible to Rotaractors across Africa. She shares practical tips on flight budgeting, accommodation hacks, and cost-effective global mobility strategies.',
+    travelMilestones: ['Multi-Country Travel Experience', 'Budget Travel Advocate', 'Rotaract Africa Fellowship Participant'],
+    expertise: ['Flight Budgeting & Hacks', 'Accommodation Planning', 'Affordable International Travel'],
     imageUrl: '/panelists/photo_2026-08-21_19-59-57.jpg',
+    highlightDestination: 'West & East Africa',
     featured: true
   },
   {
     id: 'speaker-bedan',
     name: 'Rtr Bedan',
-    title: 'Confirmed Panelist',
+    title: 'Rotaractor',
     club: 'Rotaract Club of Nairobi Parklands',
     district: 'District 9212',
-    role: 'Panelist — Rotaract Travel Hacks 2026',
-    bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, representing host club Rotaract Club of Nairobi Parklands. Selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
-    travelMilestones: ['International travel highlights to be confirmed'],
-    expertise: ['International Travel Experience'],
+    role: 'Panel Specialist — Path to RAS 2026 & ECOWAS',
+    bio: 'Rtr Bedan of the Rotaract Club of Nairobi Parklands brings firsthand experience with international travel across multiple continents, including navigating ECOWAS visa frameworks and planning for Rotaract Africa Summit logistics. Known for his adventurous global travel track record.',
+    travelMilestones: ['Multi-Continent Travel Experience', 'ECOWAS & EAC Visa Navigation Expert', 'RAS 2026 Delegation Coordinator'],
+    expertise: ['ECOWAS & EAC Visa Rules', 'International Border Protocols', 'Group Travel Logistics'],
     imageUrl: '/panelists/photo_2026-08-21_20-00-03.jpg',
+    highlightDestination: 'Canada, Americas & Francophone Africa',
     featured: true
   },
   {
     id: 'speaker-vicky-kinyua',
     name: 'Rtr Vicky Kinyua',
-    title: 'Confirmed Panelist',
+    title: 'Rotaractor',
     club: 'Rotaract Club of Nairobi Parklands',
     district: 'District 9212',
-    role: 'Panelist — Rotaract Travel Hacks 2026',
-    bio: 'Confirmed member of the five-person Rotaract Travel Hacks 2026 panel, representing host club Rotaract Club of Nairobi Parklands. Selected through a structured voting process weighted toward demonstrated international travel experience. Full biography and travel highlights will be published once panelist media assets are collected.',
-    travelMilestones: ['International travel highlights to be confirmed'],
-    expertise: ['International Travel Experience'],
+    role: 'Panel Specialist — Document Preparation & Official Protocols',
+    bio: 'Rtr Vicky Kinyua of the Rotaract Club of Nairobi Parklands specializes in official travel documentation, club authorization letters, and institutional travel protocols for Rotaract delegations. A meticulous planner helping Rotaractors get their paperwork right the first time.',
+    travelMilestones: ['Official Travel Protocol Expert', 'Club Authorization Letter Specialist', 'International Rotaract Delegate'],
+    expertise: ['Official Club Authorization Letters', 'Document Preparation Checklists', 'Embassy Interview Preparation'],
     imageUrl: '/panelists/photo_2026-08-21_20-00-00.jpg',
+    highlightDestination: 'Côte d\'Ivoire (RAS 2026)',
     featured: true
   }
 ];
@@ -104,7 +109,7 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
       'Establishing ties to country of residence (employment, assets, family, studies)',
       'Common embassy interview traps and how to respond calmly'
     ],
-    assignedPanelists: ['Confirmed Panel — individual assignments TBC']
+    assignedPanelists: ['Rtr Ruthie Mwathi', 'PP Alvin Muchai']
   },
   {
     id: 2,
@@ -119,14 +124,14 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
       'Travel health insurance policies tailored for short-term fellowship trips',
       'Group accommodation tactics (Airbnb vs hostel vs Rotarian hosting)'
     ],
-    assignedPanelists: ['Confirmed Panel — individual assignments TBC']
+    assignedPanelists: ['Rtr Wanjiku Ngure', 'Rtr Vicky Kinyua']
   },
   {
     id: 3,
     numberStr: '03',
     title: 'Path to RAS 2026 & Global Mobility',
-    shortDescription: 'Direct roadmap for attending the Rotaract Africa Summit (RAS 2026) in Côte d’Ivoire, visa waivers, transit protocols, and international Rotary conventions.',
-    fullDescription: 'Preparing African Rotaractors specifically for upcoming milestone events, starting with RAS 2026 in Abidjan, Côte d’Ivoire. Covers transit visas, health requirements (Yellow Fever, vaccinations), regional migration agreements, and leverage for future international Rotary conventions.',
+    shortDescription: 'Direct roadmap for attending the Rotaract Africa Summit (RAS 2026) in Côte d\'Ivoire, visa waivers, transit protocols, and international Rotary conventions.',
+    fullDescription: 'Preparing African Rotaractors specifically for upcoming milestone events, starting with RAS 2026 in Abidjan, Côte d\'Ivoire. Covers transit visas, health requirements (Yellow Fever, vaccinations), regional migration agreements, and leverage for future international Rotary conventions.',
     iconName: 'Compass',
     keyTopics: [
       'Step-by-step travel checklist for RAS 2026 (Côte d\'Ivoire entry & transit)',
@@ -134,14 +139,14 @@ export const PROGRAMME_PILLARS: ProgrammePillar[] = [
       'Yellow Fever vaccine certificate rules & airport health clearance',
       'Leveraging Rotaract travel credentials for future Schengen / US / UK visa applications'
     ],
-    assignedPanelists: ['Confirmed Panel — individual assignments TBC']
+    assignedPanelists: ['Rtr Bedan', 'PP Alvin Muchai']
   },
   {
     id: 4,
     numberStr: '04',
     title: 'Interactive Q&A & Floor Discussion',
     shortDescription: 'Direct live engagement pairing floor questions from attendees with pre-submitted travel challenges gathered from the Registration Portal.',
-    fullDescription: 'A 25-minute fast-paced segment where panelists answer real, raw travel queries submitted by registered attendees. Topics range from handling previous visa rejections to emergency travel assistance and cross-border driving protocols.',
+    fullDescription: 'A 20-minute fast-paced segment where panelists answer real, raw travel queries submitted by registered attendees. Topics range from handling previous visa rejections to emergency travel assistance and cross-border driving protocols.',
     iconName: 'MessageSquare',
     keyTopics: [
       'Answering top pre-submitted questions from registration portal',
@@ -227,7 +232,7 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     id: 'seg-6',
     timeSlot: '19:25 – 19:40 EAT',
     durationMins: 15,
-    title: 'Pillar 03: Path to RAS 2026 (Côte d’Ivoire) & Global Mobility',
+    title: 'Pillar 03: Path to RAS 2026 (Côte d\'Ivoire) & Global Mobility',
     pillarId: 3,
     speakerIds: ['speaker-ruthie-mwathi', 'speaker-alvin-muchai', 'speaker-wanjiku-ngure', 'speaker-bedan', 'speaker-vicky-kinyua'],
     format: 'Panel Discussion',
