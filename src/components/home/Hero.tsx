@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({
           </span>
           <span className="px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 font-medium text-xs hidden sm:flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-            Buy Goods Till: 555555 (Rotaract Nairobi Parklands)
+            Buy Goods Till: 127386 (Rotaract Nairobi Parklands)
           </span>
         </div>
 

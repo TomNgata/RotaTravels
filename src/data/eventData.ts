@@ -66,12 +66,12 @@ export const CONFIRMED_PANELISTS: Speaker[] = [
   },
   {
     id: 'speaker-bedan',
-    name: 'Rtr Bedan',
-    title: 'Rotaractor',
-    club: 'Rotaract Club of Nairobi Parklands',
+    name: 'Rtn Bedan Mukoma',
+    title: 'Rotarian',
+    club: 'Rotary Club of Gachie',
     district: 'District 9212',
     role: 'Panel Specialist — Path to RAS 2026 & ECOWAS',
-    bio: 'Rtr Bedan of the Rotaract Club of Nairobi Parklands brings firsthand experience with international travel across multiple continents, including navigating ECOWAS visa frameworks and planning for Rotaract Africa Summit logistics. Known for his adventurous global travel track record.',
+    bio: 'Rtn Bedan Mukoma of the Rotary Club of Gachie (and Alumni of Rotaract Club of Nairobi Parklands) brings firsthand experience with international travel across multiple continents, including navigating ECOWAS visa frameworks and planning for Rotaract Africa Summit logistics. Known for his adventurous global travel track record.',
     travelMilestones: ['Multi-Continent Travel Experience', 'ECOWAS & EAC Visa Navigation Expert', 'RAS 2026 Delegation Coordinator'],
     expertise: ['ECOWAS & EAC Visa Rules', 'International Border Protocols', 'Group Travel Logistics'],
     imageUrl: '/panelists/photo_2026-08-21_20-00-03.jpg',
@@ -165,7 +165,7 @@ export const PROGRAMME_TIMELINE: ProgrammeSegment[] = [
     title: 'Registration, Networking & Arrival',
     format: 'Networking & Fellowship',
     speakerIds: [],
-    description: 'Delegate check-in at the Clarion Hotel registration desk, early networking, and seat allocation. A KES 290 room charge applies at entry — pay via M-Pesa Buy Goods Till 555555 (Rotaract Nairobi Parklands).',
+    description: 'Delegate check-in at the Clarion Hotel registration desk, early networking, and seat allocation. A KES 100 room charge applies at entry — pay via M-Pesa Buy Goods Till 127386 (Rotaract Nairobi Parklands).',
     keyTakeaways: [
       'Early arrival ensures a prompt 18:30 start',
       'Registration desk managed by the host club volunteer team'
@@ -388,13 +388,13 @@ export const FAQS_LIST: FAQItem[] = [
   {
     id: 'faq-1',
     question: 'When and where is the Rotaract Travel Hacks 2026 fellowship taking place?',
-    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:30 PM to 8:30 PM EAT at the Clarion Hotel, CBD, Nairobi, Kenya. A KES 290 room charge is collected at entry via M-Pesa Buy Goods Till 555555.',
+    answer: 'The fellowship takes place on Thursday, 3 September 2026 from 6:30 PM to 8:30 PM EAT at the Clarion Hotel, CBD, Nairobi, Kenya. A KES 100 room charge is collected at entry via M-Pesa Buy Goods Till 127386.',
     category: 'EVENT'
   },
   {
     id: 'faq-2',
     question: 'Is registration free for Rotaractors and Rotarians?',
-    answer: 'Online registration via this portal is free. In-person attendees pay a KES 290 room charge at the venue entrance via M-Pesa (Buy Goods Till: 555555 — Rotaract Nairobi Parklands). Advance registration is required to receive event reminders, downloadable travel templates, and your personalized boarding pass ticket.',
+    answer: 'Online registration via this portal is free. In-person attendees pay a KES 100 room charge at the venue entrance via M-Pesa (Buy Goods Till: 127386 — Rotaract Nairobi Parklands). Advance registration is required to receive event reminders, downloadable travel templates, and your personalized boarding pass ticket.',
     category: 'REGISTRATION'
   },
   {

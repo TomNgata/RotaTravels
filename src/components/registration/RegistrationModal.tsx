@@ -227,13 +227,8 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                         onChange={(e) => setFormData({ ...formData, district: e.target.value })}
                         className="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#00246C] focus:outline-hidden bg-white"
                       >
-                        <option value="District 9212">District 9212 (Kenya, Ethiopia, SS, ER)</option>
-                        <option value="District 9214">District 9214 (Uganda, Tanzania)</option>
                         <option value="District 9215">District 9215</option>
                         <option value="District 9216">District 9216</option>
-                        <option value="District 9102">District 9102 (West Africa / RAS Host)</option>
-                        <option value="District 9104">District 9104 (Ghana)</option>
-                        <option value="Other International District">Other Global District</option>
                       </select>
                     </div>
                   </div>
@@ -275,12 +270,12 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({
                   <div>
                     <label className="block text-xs font-bold text-slate-700 mb-1 flex items-center justify-between">
                       <span>M-Pesa Confirmation Message *</span>
-                      <span className="text-[10px] text-emerald-600">Pay KES 290 to Buy Goods Till: 555555</span>
+                      <span className="text-[10px] text-emerald-600">Pay KES 100 to Buy Goods Till: 127386</span>
                     </label>
                     <textarea
                       required
                       rows={3}
-                      placeholder="e.g. UI2HW5I5KJ Confirmed. Ksh290.00 paid to AWESOME CROSS BUTCHERY LIMITED..."
+                      placeholder="e.g. UI2HW5I5KJ Confirmed. Ksh100.00 paid to AWESOME CROSS BUTCHERY LIMITED..."
                       value={formData.mpesaMessage}
                       onChange={(e) => setFormData({ ...formData, mpesaMessage: e.target.value })}
                       className="w-full p-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#00246C] focus:outline-hidden resize-none"
