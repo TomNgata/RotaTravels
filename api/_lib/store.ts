@@ -1,11 +1,17 @@
-import postgres from 'postgres';
+import pg from 'postgres';
 import type { EventRegistration, PreEventQuestion, TravelHackSubmission } from '../../src/types';
 
+const postgres = typeof pg === 'function' ? pg : (pg as any).default;
 const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL;
 
 export const usingDatabase = Boolean(connectionString);
 
-const sql = connectionString ? postgres(connectionString, { max: 1, idle_timeout: 20, connect_timeout: 10 }) : null;
+let sql: ReturnType<typeof postgres> | null = null;
+try {
+  sql = connectionString ? postgres(connectionString, { max: 1, idle_timeout: 20, connect_timeout: 10 }) : null;
+} catch (e) {
+  console.error('Failed to initialize postgres client:', e);
+}
 
 let schemaReady: Promise<void> | null = null;
 
